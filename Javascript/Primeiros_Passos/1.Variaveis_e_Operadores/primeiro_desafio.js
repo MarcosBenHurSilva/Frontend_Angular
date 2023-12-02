@@ -6,14 +6,14 @@ Você terá 3 variaveis. sendo elas:
 
 // Constantes
 const precoCombustivel = 5.63; // Preço do combustível em R$/litro
-const kmLitrros = 5.8; // Gasto médio de combustível do carro por Km/l
+const kmLitrros = 9.74; // Gasto médio de combustível do carro por Km/l
 
 // Variável
-let distanciaKm = 100.00; // Distância da viagem em Km
+let distanciaKm = 175.41; // Distância da viagem em Km
 
 // Cálculo do valor da viagem
 let litrosConsumidos = distanciaKm / kmLitrros; // km / (l/km)
 let valorCombustivelGasto = litrosConsumidos * precoCombustivel // l * (r$/l)
 
 // Exibição do resultado
-console.log('Valor da viagem: R$ ' + valorCombustivelGasto.toFixed(2).replace('.', ',')); 
+console.log('Valor da viagem: R$ ' + valorCombustivelGasto.toFixed(2).replace('.', ','));
