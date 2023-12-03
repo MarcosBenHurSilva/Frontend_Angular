@@ -16,6 +16,7 @@ const precoDaGasolina = 5.63; // Preço do combustível em R$/litro
 const precoDoEtanol = 3.64; 
 const kmLitrros = 9.74; // Gasto médio de combustível do carro por Km/l
 const tipoDeCombustivel = 'GaSoLiNa';
+// const tipoDeCombustivel = 'eTANOL';
 const distanciaKm = 175.41; // Distância da viagem em Km
 
 // Variavel
