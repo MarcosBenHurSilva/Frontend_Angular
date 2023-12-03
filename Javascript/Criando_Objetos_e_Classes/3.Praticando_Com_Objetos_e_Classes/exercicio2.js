@@ -17,8 +17,31 @@ class Pesoa{
     calcularImc() {
         return this.peso / (Math.pow(this.altura, 2));
     }
+    classificarImc(){
+        const imc = this.calcularImc();
+        if (imc < 18.5) {
+            return `IMC: ${imc.toFixed(2).replace('.', ',')}. Abaixo do peso.`;
+        } else if (imc <= 25) {
+            return `IMC: ${imc.toFixed(2).replace('.', ',')}. Peso normal.`;
+        } else if (imc <= 30) {
+            return `IMC: ${imc.toFixed(2).replace('.', ',')}. Acima do peso.`;
+        } else if (imc <= 40) {
+            return `IMC: ${imc.toFixed(2).replace('.', ',')}. Obeso.`;
+        } else if (imc > 40) {
+            return `IMC: ${imc.toFixed(2).replace('.', ',')}. Obesidade Grave.`;
+        } else {
+            return 'Erro: Entrada de dados inválida.';
+        }
+    }
 }
 
 const jose = new Pesoa('José', 70.0, 1.75)
 
+console.log(jose);
 console.log(`Meu nome é ${jose.nome} e meu IMC é: ${jose.calcularImc().toFixed(2).replace('.',',')}.`)
+console.log(jose.classificarImc());
+
+const marcos = new Pesoa('Marcos', 90.0, 1.90)
+console.log(marcos);
+console.log(`Meu nome é ${marcos.nome} e meu IMC é: ${marcos.calcularImc().toFixed(2).replace('.',',')}.`)
+console.log(marcos.classificarImc());
