@@ -12,16 +12,18 @@ Classificação:
 
 */
 
-let n1 = 9.5;
-let n2 = 8.5;
-let n3 = 6.5;
+let n1 = 7.0;
+let n2 = 7.0;
+let n3 = 7;
 
-let media = ((n1 + n2 + n3) / 3);
+let media = (n1 + n2 + n3) / 3;
 
-if(media < 5){
+if(media >= 0 && media < 5){
     console.log('Média: ' + media.toFixed(2).replace('.', ',') + '. Aluno reprovado.')
-} else if(media >= 5 && media < 7) {
+} else if(media >= 5 && media <= 7) {
     console.log('Média: ' + media.toFixed(2).replace('.', ',') + '. Aluno em recuperação.')
-} else {
+} else if(media > 7 && media <= 10){
     console.log('Média: ' + media.toFixed(2).replace('.', ',') + '. Aluno passou de Semestre.')
+} else {
+    console.log('Entrada inválida.')
 }

@@ -14,3 +14,22 @@ IMC em adultos Condição:
 - Entre 30 e 40 Obeso;
 - Acima de 40 Obsesidade Grave;
 */
+
+let peso = 90; //kg
+let altura = 1.90; //m
+
+let imc = peso / Math.pow(altura, 2);
+
+if (imc < 18.5) {
+    console.log('IMC: ' + imc.toFixed(2).replace('.', ',') + '. Abaixo do peso.')
+} else if (imc >= 18.5 && imc <= 25) {
+    console.log('IMC: ' + imc.toFixed(2).replace('.', ',') + '. Peso normal.')
+} else if (imc > 25 && imc <= 30) {
+    console.log('IMC: ' + imc.toFixed(2).replace('.', ',') + '. Acima do peso.')
+} else if (imc > 30 && imc <= 40) {
+    console.log('IMC: ' + imc.toFixed(2).replace('.', ',') + '. Obeso.')
+} else if (imc > 40) {
+    console.log('IMC: ' + imc.toFixed(2).replace('.', ',') + '. Obesidade Grave.')
+} else {
+    console.log('Erro: Entrada de dados inválida.')
+}
