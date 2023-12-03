@@ -27,55 +27,19 @@ function compararPessoas(p1, p2) {
     }
 }
 
-// objeto
-// const marcos = {
-//     nome: 'Marcos S',
-//     idade: 29,
-//     descrever: function(){
-//         console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos.`);
-//     }
-// };
 const marcos = new Pessoa('Marcos Ben-hur D.S.', 31); // melhor forma de declarar
 // marcos.nome = 'Marcos Ben-hur D.S.';
 // marcos.idade = 29;
 const tobi = new Pessoa('Tobi', 6); // melhor forma de declarar
 // tobi.nome = 'Tobi';
 // tobi.idade = 6;
-
 marcos.altura = 1.90;
-
-// Editando o objeto
-// marcos.descrever = function(){
-//     console.log(`Meu nome é ${this.nome}, tenho ${this.idade} anos e minha altura é ${this.altura.toFixed(2).replace('.', ',')}m.`);
-// }
-// delete marcos.nome;
-marcos.nome = 'Marcos Ben-hur D. S.';
-// marcos.idade = 29;
 
 //acesso dinamico aos valores do objeto
 const atributo = 'idade';
 marcos['nome'] = 'Marcos Silva'
 
-function callNome(object){
-    console.log(object.nome);
-}
-function callIdade(object){
-    console.log(object.idade);
-}
-function callAltura(object){
-    console.log(object.altura);
-}
-function callObject(object){
-    console.log(object);
-}
-
 (function(){
-        // callNome(marcos);
-        // callIdade(marcos);
-        // callAltura(marcos);
-        // callObject(marcos);
-        //console.log(marcos['nome']);
-        //console.log(marcos[atributo]);
         console.log(marcos);
         console.log(tobi);
         marcos.descrever();
