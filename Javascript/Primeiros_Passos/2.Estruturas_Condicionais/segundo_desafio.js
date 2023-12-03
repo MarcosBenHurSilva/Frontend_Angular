@@ -15,14 +15,18 @@ Imprima no console o valor que será gasto para realizar esta viagem.
 const precoDaGasolina = 5.63; // Preço do combustível em R$/litro
 const precoDoEtanol = 3.64; 
 const kmLitrros = 9.74; // Gasto médio de combustível do carro por Km/l
-const tipoDeCombustivel = 'etanol';
+const tipoDeCombustivel = 'GaSoLiNa';
 const distanciaKm = 175.41; // Distância da viagem em Km
+
+// Variavel
+let precoDoCombustivel;
 
 // Cálculo do valor da viagem
 let litrosConsumidos = distanciaKm / kmLitrros; // km / (l/km)
-if(tipoDeCombustivel == 'gasolina') {
+
+if(tipoDeCombustivel.toLocaleLowerCase() == 'gasolina') {
     precoDoCombustivel = precoDaGasolina;
-} else if(tipoDeCombustivel == 'etanol') {
+} else if(tipoDeCombustivel.toLowerCase() == 'etanol') {
     precoDoCombustivel = precoDoEtanol;
 } else {
     console.log('Tipo de combustivel não registrado')
@@ -31,4 +35,8 @@ if(tipoDeCombustivel == 'gasolina') {
 let valorCombustivelGasto = litrosConsumidos * precoDoCombustivel // l * (r$/l)
 
 // Exibição do resultado
-console.log('Valor da viagem: R$ ' + valorCombustivelGasto.toFixed(2).replace('.', ','));
+if (isNaN(valorCombustivelGasto)) {
+    console.log('Valor da viagem não disponível devido a entrada inválida.');
+} else {
+    console.log('Valor da viagem: R$ ' + valorCombustivelGasto.toFixed(2).replace('.', ','));
+}
