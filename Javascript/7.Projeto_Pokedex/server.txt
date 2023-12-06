@@ -1,0 +1,3 @@
+cd C:\Dio\Frontend_Angular\Javascript\7.Projeto_Pokedex
+
+http-server ./
