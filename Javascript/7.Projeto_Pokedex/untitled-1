@@ -1,0 +1,40 @@
+
+
+Requisição HTTP
+
+URL: http://pokeapi.co/api/v2/pokemon
+    ${Endereço}/${path = caminho de identificação do recurso}
+
+IP: http://pokeapi.co
+    https:/127.0.0.1:8080
+
+Path: /api/v2/pokemon
+
+Request Method: GET(buscar) | POST(postar novo) | PUT(adicionar em existente) | DELETE
+
+Request Headers
+
+    content-type: application/json
+
+    Configuração
+    
+    accept-language:
+    pt-BR;q=1 (Prioridade máxima => q=1)
+    pt;q=0.9,
+    en-US;q=0.8,
+    en;q=0.7,
+    gl;q=0.6 (gl = global)
+
+    Authorization: Basic, Bearer
+
+Request Body
+{
+    "name": "Teste"
+}
+
+Status Code (o que aconteceu com a requisição): 200 - 299 OK
+
+Response Headers
+    Configuração
+
+Response Body
