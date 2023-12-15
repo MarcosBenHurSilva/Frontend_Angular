@@ -27,14 +27,14 @@ function minLength(length: number) {
     };
 }
 
-class Api {
-    @minLength(10)
-    name: string;
+// class Api {
+//     @minLength(10)
+//     name: string;
 
-    constructor(name: string) {
-        this.name = name;
-    }
-}
+//     constructor(name: string) {
+//         this.name = name;
+//     }
+// }
 
-const api = new Api("usaadasdaaaaa");
-console.log(api.name);
+// const api = new Api("usaadasdaaaaa");
+// console.log(api.name);
