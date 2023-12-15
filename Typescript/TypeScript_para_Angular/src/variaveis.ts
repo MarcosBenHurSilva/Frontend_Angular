@@ -43,7 +43,7 @@ let meuProduto: ProdutoLoja = {
 let dados: string[] = ["marcos", "ana", "adriana"];
 let dados2: Array<string> = ["marcos", "ana", "adriana"];
 
-let infos: (string | number)[] = [322, "felipe"];
+let infos: (string | number)[] = [322, "marcos"];
 
 /**
  * Tuplas
@@ -58,5 +58,5 @@ dados.pop();
 /**
  * Datas
  */
-let aniversario: Date = new Date("2022-12-01 05:00");
+let aniversario: Date = new Date("2023-04-22 05:00");
 console.log(aniversario.toString());
