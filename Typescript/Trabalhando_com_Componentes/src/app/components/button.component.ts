@@ -6,4 +6,9 @@ import { Component } from "@angular/core";
     styleUrl: './button.component.css'
 })
 
-export class Button {}
+export class Button {
+    onButtonClick() {
+        console.log('Button clicked!');
+        // Perform any actions needed when the button is clicked
+      }
+}

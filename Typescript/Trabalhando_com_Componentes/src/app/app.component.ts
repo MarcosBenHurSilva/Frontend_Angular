@@ -9,6 +9,12 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
+
 export class AppComponent {
   title = 'Trabalhando_com_Componentes';
+  onButtonClick() {
+    console.log('Button clicked!');
+    // Perform any actions needed when the button is clicked
+  }
 }
