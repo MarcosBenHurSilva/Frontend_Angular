@@ -9,7 +9,12 @@ import { FormComponent } from './components/forms/form.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ButtonComponent, FormComponent, SubmitButtonComponent],
+  imports: [CommonModule, 
+            RouterOutlet, 
+            ButtonComponent, 
+            FormComponent, 
+            SubmitButtonComponent
+          ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

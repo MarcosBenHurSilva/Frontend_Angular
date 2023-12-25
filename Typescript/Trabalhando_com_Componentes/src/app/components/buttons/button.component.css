@@ -1,3 +1,7 @@
 button {
     margin-top: 20px;
+    background-color: #97f7cc;
+	color: #49aabf;
+	font-size: 18px;
+	font-family: monospace;
 }

@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
     styleUrls: ['./button.component.css']
   })
 export class ButtonComponent {
+    buttonText: string = 'ACESSAR';
+    buttonTexts: string[] = ['VENDER', 'COMPRAR', 'RESERVAR', 'NOVO', 'ESGOTADO']
     onButtonClick() {
         console.log('Button clicked!');
         // Perform any actions needed when the button is clicked
