@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 
 
 @Component({
-    selector: 'my-form',
+    selector: 'submit-button',
     standalone: true,
     imports: [CommonModule],
-    templateUrl: './form.component.html',
-    styleUrls: ['./form.component.css']
+    templateUrl: './submit_button.component.html',
+    styleUrls: ['./submit_button.component.css']
   })
-export class FormComponent {
+export class SubmitButtonComponent {
     onButtonSubmit() {
         console.log('Submitted!');
         // Perform any actions needed when the button is clicked

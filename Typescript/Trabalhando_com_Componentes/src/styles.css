@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    background: linear-gradient(rgb(77, 77, 77), rgb(197, 197, 197));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /*background-image: url("C:/Dio/Frontend_Angular/Typescript/Trabalhando_com_Componentes/src/assets/gold.jpg");
+    color: white;*/
+  }
