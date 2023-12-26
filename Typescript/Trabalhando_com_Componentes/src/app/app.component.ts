@@ -22,4 +22,6 @@ import { FormComponent } from './components/forms/form.component';
 
 export class AppComponent {
   title = 'Trabalhando_com_Componentes';
+  buttonLabel: string = 'CARRINHO';
+  buttonSecond:string = 'Click me 😊'
 }

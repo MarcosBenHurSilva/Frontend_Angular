@@ -1,7 +1,14 @@
 button {
     margin-top: 20px;
     background-color: #97f7cc;
-	color: #49aabf;
+	color: red;
 	font-size: 18px;
 	font-family: monospace;
+    border-color: red;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }

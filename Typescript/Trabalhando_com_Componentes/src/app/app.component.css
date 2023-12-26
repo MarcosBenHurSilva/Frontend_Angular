@@ -36,7 +36,7 @@
 
   h1 {
     font-size: 3.125rem;
-    color: var(--gray-900);
+    /*color: var(--gray-900);*/
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.125rem;
@@ -48,7 +48,10 @@
 
   p {
     margin: 0;
-    color: var(--gray-700);
+    /*color: var(--gray-700);*/
+    color: greenyellow;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   main {

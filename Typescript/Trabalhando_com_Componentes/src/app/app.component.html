@@ -4,7 +4,10 @@
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
       <div>
-        <my-button></my-button>
+        <my-button label = "{{buttonLabel}}"></my-button>
+        <my-button [label] = "buttonSecond"></my-button>
+        <my-button label = "Olá Mundo 🗺️"></my-button>
+        <my-button [label] = "'buttonSecond'"></my-button>
         <my-form></my-form>
         <submit-button></submit-button>
       </div>
