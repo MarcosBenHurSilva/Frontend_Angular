@@ -22,4 +22,8 @@ export class ButtonComponent {
         console.log('Button clicked!');
         // Perform any actions needed when the button is clicked
       }
+
+    getAlert(){
+      alert(this.label);
+    }
 }
