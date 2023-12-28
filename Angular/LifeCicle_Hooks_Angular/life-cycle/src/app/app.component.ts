@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { TitleComponent } from './title/title.component';
 import { BodyComponent } from './body/body.component';
+import { CheckSampleComponent } from './check-sample/check-sample.component';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { BodyComponent } from './body/body.component';
             FormsModule,
             RouterOutlet,
             TitleComponent,
-            BodyComponent
+            BodyComponent,
+            CheckSampleComponent
           ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
