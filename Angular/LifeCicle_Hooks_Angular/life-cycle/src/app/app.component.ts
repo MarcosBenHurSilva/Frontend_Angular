@@ -2,11 +2,18 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { TitleComponent } from './title/title.component';
+import { BodyComponent } from './body/body.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterOutlet],
+  imports: [CommonModule,
+            FormsModule,
+            RouterOutlet,
+            TitleComponent,
+            BodyComponent
+          ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
