@@ -4,7 +4,9 @@ import { Component,
          AfterContentChecked,
          AfterContentInit,
          AfterViewChecked,
-         AfterViewInit } from '@angular/core';
+         AfterViewInit,
+        OnDestroy } from '@angular/core';
+import { Console } from 'console';
 
 @Component({
   selector: 'app-check-sample',
@@ -18,9 +20,22 @@ DoCheck,
 AfterContentChecked,
 AfterContentInit,
 AfterViewChecked,
-AfterViewInit{
+AfterViewInit,
+OnDestroy{
+
+  quantidade:number = 0
 
   constructor(){}
+
+  adicionar(){
+    this.quantidade += 1;
+  }
+
+  decrementar(){
+    this.quantidade -= 1;
+  }
+
+  //checked → contentent → view
   ngOnInit(): void {
     console.log("ngOnInit");
   }
@@ -43,6 +58,10 @@ AfterViewInit{
 
   ngAfterViewInit(): void {
     console.log("ngAfterViewInit");
+  }
+
+  ngOnDestroy(): void {
+    console.log("Good bye my friend!!! 😿 Seu componente foi destruido.")
   }
 
 }
