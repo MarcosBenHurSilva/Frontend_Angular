@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { PokemonData } from '../../models/pokemonData';
 import { PokemonService } from '../../services/pokemon.service';
 import { TransformadorPipe } from '../../pipes/transformador.pipe';
@@ -7,7 +8,7 @@ import { TransformadorPipe } from '../../pipes/transformador.pipe';
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [ FormsModule, TransformadorPipe],
+  imports: [ FormsModule, TransformadorPipe, CommonModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
