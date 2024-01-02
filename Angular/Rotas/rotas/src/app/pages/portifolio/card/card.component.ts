@@ -18,6 +18,11 @@ export class CardComponent implements OnInit{
     this.parametrizador.params.subscribe(
       res => console.log(res)
     )
+
+    this.parametrizador.firstChild?.params.subscribe(
+      res => console.log(res)
+    )
+
     //http://localhost:4200/portifolio/1?name=marcos&token=123
     this.parametrizador.queryParams.subscribe(
       res => console.log(res)
